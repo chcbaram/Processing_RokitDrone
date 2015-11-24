@@ -372,10 +372,7 @@ void PacketReceive( byte ByteData )
             print("team "); print(team); print(" ");
             print("flightStatus "); print(flightStatus); print(" ");
             print("energy "); print(energy); print(" ");
-            print("battery "); 
-            print( String.format("0x%02x", energy)); 
-            //print(battery); 
-            print(" ");
+            print("battery "); print(battery&0xFF);  print(" ");
             print("missileQuantity "); print(missileQuantity); println(" ");
             
           }
